@@ -1,5 +1,20 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid d7444c1b-87b0-4ff7-a57a-a32071ba4b64)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (text "Fuente Conmutada - v1.0 - 2024\nTaller Colaborativo de Electrónica\nFCEFyN - UNC"
+    (at 16.256 32.004 0)
+    (effects (font (size 4 4)) (justify left bottom))
+    (uuid deff9996-adfe-4fc5-a743-678a5702782a)
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
