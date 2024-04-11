@@ -1,0 +1,122 @@
+
+**** 04/06/24 23:14:52 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ c:\users\bruno\desktop\simulación\boost converter-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 106u 100u SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BOOST CONVERTER
+X_U1         N14781 N14781 N14601 N14573 0 LMR64010_TRANS
+R_R1         N14573 N14560  205k TC=0,0 
+R_R2         0 N14573  13.3k TC=0,0 
+C_C1         0 N14781  2.2uF  TC=0,0 
+C_C2         N14560 0  4.7uF  TC=0,0 
+L_L1         N14781 N14601  10uH  
+C_CF         N14573 N14560  120p  TC=0,0 
+V_V1         N14781 0 5
+R_R3         0 N14560  50 TC=0,0 
+D_D3         N14601 N14560 MBR360 
+
+**** RESUMING transient.cir ****
+.END
+
+**** 04/06/24 23:14:52 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ c:\users\bruno\desktop\simulación\boost converter-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.D_D_Ilimit X_U1.Dclamp     X_U1._DMOD      X_U1.D_ideal    
+          IS    1.000000E-12    1.000000E-15   10.000000E-15   10.000000E-15 
+           N     .01             .1              .01                         
+          BV                                    3                            
+         IBV                                    1.000000E-09                 
+          RS    5.000000E-03     .05                                         
+          TT   10.000000E-12   10.000000E-12                                 
+
+
+               X_U1.X1.D_D1    
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+**** 04/06/24 23:14:52 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ c:\users\bruno\desktop\simulación\boost converter-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.S_VSWITCH_2 
+         RON     .5          
+        ROFF    1.000000E+09 
+         VON     .4          
+        VOFF     .3          
+
+
+               X_U1.S_VSWITCH_1 
+         RON     .5          
+        ROFF    1.000000E+09 
+         VON     .4          
+        VOFF     .3          
+
+
+
+          JOB CONCLUDED
+
+**** 04/06/24 23:14:52 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ c:\users\bruno\desktop\simulación\boost converter-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        7.77
+

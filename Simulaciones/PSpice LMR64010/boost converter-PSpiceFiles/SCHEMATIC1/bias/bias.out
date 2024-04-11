@@ -1,0 +1,284 @@
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BOOST CONVERTER
+X_U1         N14781 N14781 N14601 N14573 0 LMR64010_TRANS
+R_R1         N14573 N14560  578k TC=0,0 
+R_R2         0 N14573  13.3k TC=0,0 
+C_C1         0 N14781  2.2u  TC=0,0 
+C_C2         N14560 0  4.7u  TC=0,0 
+L_L1         N14781 N14601  10uH  
+C_CF         N14573 N14560  120p  TC=0,0 
+V_V1         N14781 0 5
+R_R3         0 N14560  10k TC=0,0 
+D_D3         N14601 N14560 MBR360 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.D_D_Ilimit X_U1.Dclamp     X_U1._DMOD      X_U1.D_ideal    
+          IS    1.000000E-12    1.000000E-15   10.000000E-15   10.000000E-15 
+           N     .01             .1              .01                         
+          BV                                    3                            
+         IBV                                    1.000000E-09                 
+          RS    5.000000E-03     .05                                         
+          TT   10.000000E-12   10.000000E-12                                 
+
+
+               X_U1.X1.D_D1    
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.S_VSWITCH_2 
+         RON     .5          
+        ROFF    1.000000E+09 
+         VON     .4          
+        VOFF     .3          
+
+
+               X_U1.S_VSWITCH_1 
+         RON     .5          
+        ROFF    1.000000E+09 
+         VON     .4          
+        VOFF     .3          
+
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14560)    4.8174 (N14573)     .1084 (N14601)    5.0000 (N14781)    5.0000     
+
+(X_U1.3)    0.0000 (X_U1.7)    0.0000 (X_U1.Q)     .1000 (X_U1.10)    0.0000    
+
+(X_U1.12)    5.0000                   (X_U1.19) 93.47E-06                       
+
+(X_U1.7p)    5.0000                   (X_U1.BG)    1.2300                       
+
+(X_U1.QB)    5.0000                   (X_U1.101)    0.0000                      
+
+(X_U1.14p)    0.0000                  (X_U1.BG1)    1.2300                      
+
+(X_U1.clp)    1.4000                  (X_U1.Vc1)    1.4653                      
+
+(X_U1.14pp)    0.0000                 (X_U1.Ramp)    0.0000                     
+
+(X_U1.verx)    1.4653                 (X_U1.VSum) 3.003E-09                     
+
+(X_U1.Ref5v)    5.0000                (X_U1.Vdiff) 93.47E-06                    
+
+(X_U1.Vsense) 250.3E-12               (X_U1.X1.MY5)    5.0000                   
+
+(X_U1.X1.Qbr)    5.0000               (X_U1.X1.Qqq)     .0900                   
+
+(X_U1.Clk_Clk)    0.0000              (X_U1.Compout)    0.0000                  
+
+(X_U1.MAXDUTY)    5.0000              (X_U1.X1.Qint)     .0900                  
+
+(X_U1.X3.Yint)    0.0000              (X_U1.Compoutp)    0.0000                 
+
+(X_U1.X1.MYVSS)     .1000             (X_U1.X1.Qqqd1)     .1000                 
+
+(X_U1.Compoutp2)    0.0000            (X_U1.Clk_ILIMIT)    0.0000               
+
+(X_U1.X1.X3.YINT)     .1000           (X_U1.CUR_LIMIT_n1)    0.0000             
+
+(X_U1.CUR_LIMIT_n2)-29.15E-21         (X_U1.CUR_LIMIT_n3)    0.0000             
+
+(X_U1.vsence_scale) 3.003E-09         (X_U1.CUR_LIMIT_n1_d) 583.0E-24       
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.899E-04
+    X_U1.V1      0.000E+00
+    X_U1.VMAX_DUTY  -5.000E-12
+    X_U1.VRSENSE   5.005E-09
+    X_U1.Vclp    9.201E-05
+    X_U1.VCH     0.000E+00
+    X_U1.VRH     0.000E+00
+    X_U1.X1.V1  -4.911E-12
+    X_U1.X1.V2  -5.640E-14
+
+    TOTAL POWER DISSIPATION   2.32E-03  WATTS
+
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U1.G_Bg   X_U1.X1.GQ
+I-SOURCE     9.347E-05  -5.000E+00
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U1.E_BStartup         X_U1.EMAX_DUTY          X_U1.E_B6 
+V-SOURCE     1.230E+00               5.000E+00               0.000E+00
+I-SOURCE     0.000E+00               0.000E+00               0.000E+00
+
+NAME         X_U1.E_ILIMIT_1         X_U1.E_buff           
+V-SOURCE     0.000E+00               0.000E+00            
+I-SOURCE     5.830E-20               0.000E+00            
+
+NAME         X_U1.E_CLK_ILIMIT       X_U1.E_BR   X_U1.ECompout         
+V-SOURCE     0.000E+00               0.000E+00   0.000E+00            
+I-SOURCE     0.000E+00               0.000E+00   0.000E+00            
+
+NAME         X_U1.E4     X_U1.E3     X_U1.EA1    X_U1.Esense           
+V-SOURCE     1.465E+00   9.347E-05   9.347E-05   3.003E-09            
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00            
+
+NAME         X_U1.E_BD   X_U1.X1.EQ  X_U1.X1.EQb           
+V-SOURCE     0.000E+00   9.000E-02   5.000E+00            
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00            
+
+NAME         X_U1.X3.E_ABM           X_U1.X10.E_B1         
+V-SOURCE     0.000E+00               3.003E-09            
+I-SOURCE     0.000E+00               0.000E+00            
+
+NAME         X_U1.X1.X3.E_ABMGATE  
+V-SOURCE     1.000E-01            
+I-SOURCE     0.000E+00            
+
+
+**** DIODES
+
+
+NAME         D_D3        X_U1.D_D1ILIMIT         X_U1.Dclp             
+MODEL        MBR360      X_U1.D_D_Ilimit         X_U1.Dclamp           
+ID           4.90E-04    2.22E-28                9.20E-05             
+VD           1.83E-01    2.97E-20                6.53E-02             
+REQ          5.39E+01    2.59E+08                2.81E+01             
+CAP          5.91E-10    3.87E-20                3.56E-13             
+
+NAME         X_U1.Dminlim            X_U1.D_SW1            
+MODEL        X_U1._DMOD              X_U1.D_ideal          
+ID          -1.48E-12               -5.01E-12             
+VD          -1.47E+00               -5.00E+00             
+REQ          1.00E+12                1.00E+12             
+CAP          0.00E+00                0.00E+00             
+
+NAME         X_U1.X1.D_D10           X_U1.X1.D_D11         
+MODEL        X_U1.X1.D_D1            X_U1.X1.D_D1          
+ID          -4.91E-12                5.68E-14             
+VD          -4.91E+00                1.00E-02             
+REQ          1.00E+12                5.14E+10             
+CAP          1.00E-23                1.95E-22             
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         X_U1.SW2                X_U1.SW1              
+MODEL        X_U1.S_VSWITCH_2        X_U1.S_VSWITCH_1      
+I LOAD      -5.83E-20                5.00E-09             
+V LOAD      -2.91E-20                5.00E+00             
+R LOAD       5.00E-01                1.00E+09             
+V CTRL       5.00E+00                0.00E+00             
+
+          JOB CONCLUDED
+
+**** 04/05/24 15:09:49 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\bruno\desktop\boost converter\boost converter-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .59
+

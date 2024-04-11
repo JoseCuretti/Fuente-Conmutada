@@ -1,0 +1,61 @@
+
+**** 04/06/24 20:59:15 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ c:\users\bruno\desktop\simulación\boost converter-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 120u 100u SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BOOST CONVERTER
+X_U1         N14781 N14781 N14601 N14573 0 LMR64010_TRANS
+R_R1         N14573 N14560  578k TC=0,0 
+R_R2         0 N14573  13.3k TC=0,0 
+C_C1         0 N14781  2.2uF  TC=0,0 
+C_C2         N14560 0  4.7uF  TC=0,0 
+L_L1         N14781 N14601  10uH  
+C_CF         N14573 N14560  220p  TC=0,0 
+V_V1         N14781 0 5
+R_R3         0 N14560  50 TC=0,0 
+D_D3         N14601 N14560 MBR360 
+V_V2         N19142 0 5
+R_R6         0 N19244  50 TC=0,0 
+C_C4         N19244 0  4.7uF  TC=0,0 
+L_L2         N19142 N20410  10uH  
+D_D4         N20410 N19244 MBR360 
+L_L3         N20657 0  10uH  
+V_V3         N20657 0 5
+C_C6         N20679 0  4.7uF  TC=0,0 
+R_R7         0 N20679  50 TC=0,0 
+D_D5         0 N20679 MBR360 
+
+**** RESUMING transient.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V3. You may break the loop by adding a series resistance
+
