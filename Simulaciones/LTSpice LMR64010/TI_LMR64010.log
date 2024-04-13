@@ -1,29 +1,27 @@
-Circuit: * D:\JOSE\Facultad\Taller\fuenteSwitching\simulacion\TI_LMR64010.asc
+Circuit: * D:\gitHub\Fuente-Conmutada\Simulaciones\LTSpice LMR64010\TI_LMR64010.asc
 
-Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vdd}},{{vss}})}"
-    Error: undefined symbol in: "if([v](a)>((vthresh)),((vdd)),((vss)))"
-WARNING: Less than two connections to node U1:REF5V.  This node is used by V:U1:1.
+WARNING: Less than two connections to node u1:ref5v.  This node is used by v:u1:1.
 Direct Newton iteration for .op point succeeded.
 Ignoring empty pin current: Ix(u1:vin)
 Ignoring empty pin current: Ix(u1:fb)
 Ignoring empty pin current: Ix(u1:vin)
 Ignoring empty pin current: Ix(u1:fb)
-Heightened Def Con from 0.00124375 to 0.00124375
 
-Date: Mon Apr 08 15:13:06 2024
-Total elapsed time: 25.914 seconds.
+Date: Sat Apr 13 16:06:30 2024
+Total elapsed time: 7.938 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 4128554
-traniter = 4128514
-tranpoints = 1349488
-accept = 1023258
-rejected = 326231
+method = trap
+totiter = 1692588
+traniter = 1692545
+tranpoints = 543448
+accept = 415702
+rejected = 127746
 matrix size = 77
-fillins = 43
+fillins = 44
 solver = Normal
-Matrix Compiler1: 3.24 KB object code size  1.2/0.5/[0.3]
-Matrix Compiler2: 5.22 KB object code size  0.8/1.1/[0.3]
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: 3.30 KB object code size  1.0/0.5/[0.4]
+Matrix Compiler2: 5.24 KB object code size  0.5/0.6/[0.4]
 
