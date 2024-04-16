@@ -1,0 +1,22 @@
+Circuit: * D:\gitHub\Fuente-Conmutada\Simulaciones\LTspice LT1930A\LT1930_pote_selection.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Apr 13 20:49:44 2024
+Total elapsed time: 2.060 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 808725
+traniter = 808717
+tranpoints = 217746
+accept = 157224
+rejected = 60522
+matrix size = 24
+fillins = 1
+solver = Normal
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1:      51 opcodes  0.2/[0.2]/0.2
+Matrix Compiler2: off  [0.1]/0.2/0.2
+
