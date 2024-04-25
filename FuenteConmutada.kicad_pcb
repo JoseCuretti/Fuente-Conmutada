@@ -290,6 +290,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-LQSH-4020.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (layer "F.Cu")
@@ -406,6 +411,11 @@
     (pad "2" smd rect (at 1.9 0 90) (size 2.2 3.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 12 "Net-(L3-Pad2)") (pinfunction "2") (pintype "passive") (tstamp 947599fc-a156-4858-b2c3-74c192311e63))
     (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Taiyo-Yuden_NR-40xx.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-LQSH-4020.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -529,6 +539,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:SOD128_diode/PMEG4020EP,115.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -762,6 +777,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:SOD128_diode/PMEG4020EP,115.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Diode_SMD:D_SOD-128" (layer "F.Cu")
@@ -827,6 +847,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:SOD128_diode/PMEG4020EP,115.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1044,6 +1069,11 @@
     (pad "2" smd rect (at 1.9 0 180) (size 2.2 3.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 11 "Net-(L2-Pad2)") (pinfunction "2") (pintype "passive") (tstamp 743cd8f8-6c39-46c8-877f-d6dd1c397b64))
     (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Taiyo-Yuden_NR-40xx.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-LQSH-4020.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1430,6 +1460,11 @@
     (pad "2" smd rect (at 1.9 0 180) (size 2.2 3.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 13 "Net-(L4-Pad2)") (pinfunction "2") (pintype "passive") (tstamp cc9fa9ba-76fc-446b-b984-c93ed67a5d3e))
     (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Taiyo-Yuden_NR-40xx.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-LQSH-4020.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
